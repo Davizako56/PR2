@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practica2.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <TableView prefHeight="165.0" prefWidth="378.0">
+     <columns>
+       <TableColumn prefWidth="75.0" text="NIA" />
+       <TableColumn prefWidth="75.0" text="Nombre" />
+         <TableColumn prefWidth="71.0" text="Fecha de nacimiento" />
+     </columns>
+      <columnResizePolicy>
+         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+      </columnResizePolicy>
+   </TableView>
+   <HBox>
+       <Button mnemonicParsing="false" text="Eliminar">
+         <HBox.margin>
+            <Insets left="130.0" right="10.0" />
+         </HBox.margin></Button>
+       <Button mnemonicParsing="false" text="Editar" />
+   </HBox>
+   <TextField fx:id="niaTextField" promptText="Introduce un NIA..." />
+   <TextField fx:id="nombreTextField" promptText="Introduce un nombre..." />
+   <DatePicker fx:id="nacimientoDatePicker" promptText="Fecha de nacimiento..." />
+   <HBox>
+       <Button mnemonicParsing="false" onAction="#insertarButton" text="Insertar">
+         <HBox.margin>
+            <Insets left="130.0" right="10.0" />
+         </HBox.margin></Button>
+       <Button mnemonicParsing="false" onAction="#guardarButton" text="Guardar" />
+   </HBox>
+</VBox>
