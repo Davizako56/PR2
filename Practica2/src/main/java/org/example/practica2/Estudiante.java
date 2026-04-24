@@ -26,6 +26,18 @@ public class Estudiante {
         return fecha_de_nacimiento;
     }
 
+    public void setNia(Integer nia) {
+        this.nia = nia;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setFecha_de_nacimiento(LocalDate fecha_de_nacimiento) {
+        this.fecha_de_nacimiento = fecha_de_nacimiento;
+    }
+
     @Override
 
     public String toString() {
