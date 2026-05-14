@@ -11,7 +11,9 @@ module org.example.practica2 {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires java.sql;
+    requires com.google.gson;
 
     opens org.example.practica2 to javafx.fxml;
+    opens Binario to com.google.gson;
     exports org.example.practica2;
 }
